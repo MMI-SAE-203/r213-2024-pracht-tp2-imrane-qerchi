@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { MaisonRecord } from '@/types';
 const maisonsListe: MaisonRecord[] = [
   {
     "adresse": "10 rue du Château , Montbéliard 25400",
