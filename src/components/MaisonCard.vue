@@ -57,7 +57,7 @@
         </svg>
         </div>
         <p class="self-stretch flex-grow-0 flex-shrink-0 w-[312px] text-base text-left text-gray-500">
-        2821 Lake Sevilla, Palm Harbor, TX
+        {{ adresse }}
         </p>
         <svg
         width="312"
