@@ -1,7 +1,8 @@
 <script setup lang="ts">
   import type { MaisonRecord } from '@/types'
 
-  defineProps<MaisonRecord>()
+  const props = defineProps<MaisonRecord>()
+
 </script>
 
 <template>
