@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const maisonsListe: {
+interface MaisonRecord {
     adresse: string;
     collectionId: string;
     collectionName: string;
@@ -13,7 +13,8 @@ const maisonsListe: {
     prix: number;
     surface: number;
     updated: string;
-}[] = [
+}
+const maisonsListe: MaisonRecord[] = [
   {
     "adresse": "10 rue du Château , Montbéliard 25400",
     "collectionId": "a66ilxpssp4hwsy",
