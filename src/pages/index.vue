@@ -1,19 +1,4 @@
 <script setup lang="ts">
-interface MaisonRecord {
-    adresse: string;
-    collectionId: string;
-    collectionName: string;
-    created: string;
-    favori: boolean;
-    id: string;
-    image: string;
-    nbChambres: number;
-    nbSdb: number;
-    nomMaison: string;
-    prix: number;
-    surface: number;
-    updated: string;
-}
 const maisonsListe: MaisonRecord[] = [
   {
     "adresse": "10 rue du Château , Montbéliard 25400",
