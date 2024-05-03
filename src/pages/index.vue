@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { MaisonRecord } from '@/types';
 import MaisonCard from '@/components/MaisonCard.vue';
@@ -83,7 +84,7 @@ const maisonsListe: MaisonRecord[] = [
 
 <template>
   <div>
-    <MaisonCard v-bind="maisonsListe[2]"/>  
-  <h1 class="text-2xl">Bonjour monde !</h1>
+    <MaisonCard v-for="maison in maisonsListe" :key="maison.nom" v-bind="maison" />
+    <h1 class="text-2xl">Bonjour monde !</h1>
   </div>
 </template>
