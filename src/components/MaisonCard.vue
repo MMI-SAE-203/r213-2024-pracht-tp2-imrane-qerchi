@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import type { MaisonRecord } from '@/pocketbase-types'
+  import ImgPb from './ImgPb.vue'
 
   const props = defineProps<MaisonRecord>()
-
 </script>
 
 <template>
@@ -13,9 +13,7 @@
         <div
         class="w-[352px] h-[200px] absolute left-[-0.5px] top-[-0.5px] rounded-tl-lg rounded-tr-lg bg-gray-500"
         ></div>
-        <img
-        src="#"
-        class="w-[352px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover"
+        <ImgPb :record="props" :filename="image" class="w-[352px] h-[235px] absolute left-[-0.5px] top-[-24.5px] object-cover"
         />
     </div>
     <div
