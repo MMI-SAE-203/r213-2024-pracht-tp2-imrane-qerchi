@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import { MaisonRecord } from '@/types';
+import { MaisonRecord } from '@/pocketbase-types';
 import MaisonCard from '@/components/MaisonCard.vue';
 
 const maisonsListe: MaisonRecord[] = [
