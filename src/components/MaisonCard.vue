@@ -23,16 +23,16 @@
         <div class="flex-grow-0 flex-shrink-0 w-[249px] h-[75px]">
             <div class="flex justify-start items-end w-[164.11px] absolute left-0 top-0 gap-0.5">
             <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-indigo-500">
-                $2,700
+                {{ prix }} €
             </p>
             <p class="flex-grow-0 flex-shrink-0 w-[58px] h-8 text-base text-left text-gray-500">
-                /month
+                
             </p>
             </div>
             <p
             class="w-[249px] absolute left-0 top-[43px] text-2xl font-semibold text-left text-gray-900"
             >
-            Beverly Springfield
+            {{ nomMaison }}
             </p>
         </div>
         <svg
@@ -102,8 +102,8 @@
             ></path>
             </svg>
             <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1">
-            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">4</p>
-            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">Beds</p>
+            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">{{ nbChambres }}</p>
+            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">Lits</p>
             </div>
         </div>
         <div class="flex justify-center items-center flex-grow relative gap-2">
@@ -153,8 +153,8 @@
             </defs>
             </svg>
             <div class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-1">
-            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">2</p>
-            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">Bathrooms</p>
+            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">{{ nbSdb }}</p>
+            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">Salles de bains</p>
             </div>
         </div>
         <div class="flex justify-end items-center flex-grow relative gap-2">
@@ -197,7 +197,7 @@
             </defs>
             </svg>
             <div class="flex justify-end items-center flex-grow-0 flex-shrink-0 relative gap-1">
-            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">6x7.5</p>
+            <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">{{ surface }}</p>
             <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-gray-600">m²</p>
             </div>
         </div>
